@@ -4,70 +4,50 @@
   <meta charset="UTF-8">
   <title>Product Landing Page FCC</title>
   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <main>
   <header id="header">
     <div>
       <p>Online store of modern thermoses<br/>
       Perfect New Year's Gift!</p>
     </div>
-    
-    <figure><p class="logo">TEA TIME</p></figure>
-    
+
+    <figure><img id="header-img" src="./img/logo.png"></figure>
+
     <nav id="nav-bar">
-      <a href="#products" class="nav-link">Products</a>
-      <a href="#why" class="nav-link">Why We?</a>
-      <a href="#buy" class="nav-link">Buy</a>
+      <a href="#products-link" class="nav-link">Products</a>
+      <a href="#why-link" class="nav-link">Why We?</a>
+      <a href="#buy-link" class="nav-link">Buy</a>
     </nav>
   </header>
-  
+
   <section class="page">
     <section id="intro">
-      <h1>Your useful accessory</h1>
-      <h2>Collection of design thermoses. Style. Quality. Health. Confidence</h2>
+      <div>
+        <h1>Your useful accessory</h1>
+        <h2>Collection of design thermoses<br/>
+          Style. Quality. Health. Confidence</h2>
+      </div>
     </section>
-    
+
+    <a id="products-link" class="proper-link"></a>
     <section id="products">
       <section>
-        <h3>Christmas joy</h3>
-        <p>Christmas and New Year Gift</p>
-        
-        <div>
-          <figure></figure>
-          
-          <div>
-            <p>Holidays are coming!</p>
-            <p>The festive design will perfectly convey the Christmas mood, and the impeccable quality will provide warmth during a cold day. Just one beautiful thermos will provide originality and warmth. The perfect gift for loved ones and friends.</p>
-            <p><span>450 ₴</span> 365 ₴</p>
-            <p>SPECIFICATIONS
-              <ul>
-                <li>Volume: 500 mL</li>
-                <li>Height: 23,5 cm</li>
-                <li>Diameter: 6,5 cm</li>
-                <li>Weight: 342 g</li>
-                <li>Body Material: stainless steel 201</li>
-                <li>Bulb Material: stainless steel 304</li>
-              </ul>
-            </p>
-          </div>
-        </div>
-      </section>
-      
-      <section>
         <h3>Classic collection</h3>
-        <p>Matte perfection</p>
-        
+        <h4>Matte perfection</h4>
+
         <div>
-          <figure></figure>
-          
-          <div>
+          <figure>
+            <img alt="Classic thermoses" src="./img/classic-thermoses.jpg">
+          </figure>
+
+          <div class="spec">
             <p>Trusting the classics</p>
             <p>Not just a thermos. An accessory that distinguished by elegance and conciseness in every detail. Done in plain classic colors, no need for drawings or inscriptions. Highlight your style and stay healthy.</p>
-            <p><span>600 ₴</span> 486 ₴</p>
+            <p class="price"><span>600 ₴</span> 486 ₴</p>
             <p>SPECIFICATIONS
               <ul>
                 <li>Volume: 500 mL</li>
@@ -81,55 +61,128 @@
           </div>
         </div>
       </section>
-      
+
+      <section>
+        <h3>Christmas joy</h3>
+        <h4>Christmas and New Year Gift</h4>
+
+        <div>
+          <figure>
+            <img alt="Christmas thermoses" src="./img/christmas-thermoses.png">
+          </figure>
+
+          <div class="spec">
+            <p>Holidays are coming!</p>
+            <p>The festive design will perfectly convey the Christmas mood,
+               and the impeccable quality will provide warmth during a cold day.
+               Just one beautiful thermos will provide originality and warmth.
+               The perfect gift for loved ones and friends.</p>
+            <p class="price"><span>450 ₴</span> 365 ₴</p>
+            <p>SPECIFICATIONS
+              <ul>
+                <li>Volume: 500 mL</li>
+                <li>Height: 23,5 cm</li>
+                <li>Diameter: 6,5 cm</li>
+                <li>Weight: 342 g</li>
+                <li>Body Material: stainless steel 201</li>
+                <li>Bulb Material: stainless steel 304</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Gloss</h3>
+        <h4>When practicality is your priority</h4>
+
+        <div>
+          <figure>
+            <img alt="Gloss thermoses" src="./img/gloss-thermoses.png">
+          </figure>
+
+          <div class="spec">
+            <p>Lightweight and portable thermoses</p>
+            <p>The line includes a large assortment. The rich color and elegant shape of our thermoses will allow you to stand out from the crowd. The lid is connected to the base even in an open thermos, which greatly simplifies and accelerates its use. The narrow neck allows you to drink a drink in nature, at school, in the car.</p>
+            <p class="price"><span>340 ₴</span> 275 ₴</p>
+            <p>SPECIFICATIONS
+              <ul>
+                <li>Volume: 500 mL</li>
+                <li>Height: 22,5 cm</li>
+                <li>Diameter: 6,5 cm</li>
+                <li>Weight: 275 g</li>
+                <li>Body Material: stainless steel 201</li>
+                <li>Bulb Material: stainless steel 304</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+
     </section>
-    
+
+    <a id="why-link" class="proper-link"></a>
     <section id="why">
       <h3>Why choose us?</h3>
       <div>
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/uRr4c43wxTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-        <div>
+        <div class="resp-container">
+          <iframe class="resp-iframe" id="video" src="https://www.youtube.com/embed/uRr4c43wxTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="adventages">
           <div>
-            <img src="#" alt="icon">
-            <p>
-              <span>Price and Quality</span><br/>
-              We cooperate with manufacturers without intermediaries and offer high quality products at the best price.
-            </p>
+            <img src="./icon/hand.png" alt="icon">
+            <div>
+              <p class="property">Price and Quality</p>
+              <p>We cooperate with manufacturers without intermediaries and offer high quality products at the best price.</p>
+            </div>
           </div>
-          
+
           <div>
-            <img src="#" alt="icon">
-            <p>
-              <span>No prepayments</span><br/>
-              We will send the parcel postpayment. First inspect and only then pay. The choice remains for you.
-            </p>
+            <img src="./icon/shield.png" alt="icon">
+            <div>
+              <p class="property">No prepayments</p>
+              <p>We will send the parcel postpayment. First inspect and only then pay. The choice remains for you.</p>
+            </div>
           </div>
-          
+
           <div>
-            <img src="#" alt="icon">
-            <p>
-              <span>Fast delivery</span><br/>
-              If you order before 5 pm we will send the goods on the day of the order by "Нова Пошта".
-            </p>
+            <img src="./icon/delivery-truck.png" alt="icon">
+            <div>
+              <p class="property">Fast delivery</p>
+              <p>If you order before 5 pm we will send the goods on the day of the order by "Нова Пошта".</p>
+            </div>
           </div>
-          
+
           <div>
-            <img src="#" alt="icon">
-            <p>
-              <span>Quality assurance</span><br/>
-              All products pass the quality check.
-            </p>
+            <img src="./icon/ribbon.png" alt="icon">
+            <div>
+              <p class="property">Quality assurance</p>
+              <p>All products pass the quality check.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    
+
+    <a id="buy-link" class="proper-link"></a>
     <section id="buy">
+      <section>
+        <h3>Special offer to New Year <br/>
+          - free delivery!</h3>
+        <p>Take an offer at the end of the stock! Quantity is limited!</p>
+      </section>
       <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-        <label for="email" id="email-label">Email</label>
-        <input id="email" name="email" type="email" placeholder="Enter your email" required>
-        
+        <div>
+          <label for="name" id="name-label">Name</label><br/>
+          <input id="name" name="name" type="email" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+          <label for="email" id="email-label">Email</label><br/>
+          <input id="email" name="email" type="text" placeholder="Enter your email" required>
+        </div>
+
         <div><input type="submit" class="button" id="submit" value="Submit"></div>
       </form>
     </section>
@@ -140,14 +193,16 @@
       <p>Your useful accessory</p>
       <p>Privacy policy</p>
     </div>
-    
+
     <div>
-      <p>thermos@tea-time.com.ua</p>
+      <p>Icons made by Freepik from <a href="www.flaticon.com" target="_blank">www.flaticon.com</a></p>
       <p>Coded by <a href="https://www.freecodecamp.com/alexhuginn" target="_blank">Alex Huginn</a></p>
     </div>
-</footer>
+  </footer>
 </main>
+
+
 <!-- partial -->
-  
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 </html>
